@@ -1,16 +1,16 @@
-# Themes Gallery
+# مكتبة الثيمات
 
-Browse awesome themes available for Slidev here.
+تصفح هنا الثيمات الرائعة المتوفرة لـ Slidev
 
-Read more about [how to use a theme](/themes/use), or [how to write your own](/themes/write-a-theme) and share with the community!
+إقرأ أكثر عن [كيفية استخدام ثيم](/themes/use), أو [كيف تنشئ ثيماً](/themes/write-a-theme) وشاركه مع مجتمعنا!
 
-## Official Themes
+## الثيمات الرسمية
 
 <ClientOnly>
   <ThemeGallery collection="official"/>
 </ClientOnly>
 
-## Community Themes
+## الثيمات المجتمعية
 
 Here are the curated themes made by the community.
 
@@ -19,6 +19,6 @@ Here are the curated themes made by the community.
   <ThemeGallery collection="community"/>
 </ClientOnly>
 
-## More Themes
+## المزيد من الثيمات
 
-Find all the [themes available on NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).
+جد جميع الثيمات [المتوفرة على NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).

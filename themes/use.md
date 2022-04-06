@@ -1,6 +1,6 @@
-# Use Theme
+# استخدام ثيم
 
-Changing the theme in Slidev is surprisingly easy. All you need to do is to add the `theme:` field in your frontmatter.
+تغيير الثيم في Slidev من أسهل ما يكون. كل ما تحتاجه هو إضافة الخاصية `theme:` في قسم التعريف.
 
 ```yaml
 ---
@@ -8,33 +8,34 @@ theme: seriph
 ---
 ```
 
-You can start the server, which will prompt you to install the theme automatically
+عند بدء السيرفر ستبدأ إجراءات تثبيت الثيم مباشرة.
 
 <div class="language-md">
 <pre>
-<span class="token keyword">?</span> The theme <span class="token string">"@slidev/theme-seriph"</span> was not found in your project, do you want to install it now? › (Y/n)
+<span class="token keyword">?</span> الثيم <span class="token string">"@slidev/theme-seriph"</span> ليس مثبتا على مشروعك, أتريد تثبيته؟ › (Y/n)
 </pre>
 </div>
 
-or install the theme manually via
+أو قم بتثبيت الثيم يدويا عبر
 
 ```bash
 $ npm install @slidev/theme-seriph
 ```
 
-And that's all, enjoy the new theme! For more details about the usage, you can refer to the theme's README.
+تهانينا، يمكنك الآن الاستمتاع بالثيم الجديد! للمزيد من التفاصيل عن الاستخدام طالع ملف README الخاص بالثيمات.
 
 Want to share your theme? Learn about [how to write a theme](/themes/write-a-theme).
+تريد مشاركة الثيم الخاص بك؟ تعلم [كيف تنشئ ثيماً](/themes/write-a-theme).
 
-## Eject Theme
+## إستخراج الثيم
 
-If you want to get full control of the current theme, you can **eject** it to your local file system and modify it as you want. By running the following command
+إذا أدرت تحكماُ كاملاً على الثيم الحالي فيمكنك **استخراجه** إلى نظام الملفات الخاص بك وتعديله كيفما تريد. وذلك باستخدام الأمر التالي
 
 ```bash
 $ slidev theme eject
 ```
 
-It will eject the theme you are using currently into `./theme`, and changed your frontmatter to 
+سيقوم الأمر باستخراج الثيم المستخدم حاليا إلى `./theme`, وتغيير قسم التعريف الخاص بك إلى
 
 ```yaml
 ---
@@ -42,11 +43,11 @@ theme: ./theme
 ---
 ```
 
-This could also be helpful if you want to make a theme based on an existing one. If you do, remember to mention the original theme and the author :)
+هذه العملية مفيدة جداً في حال أدرت إنشاء ثيم جديد على أساس ثيم موجود مسبقاً. في هذه الحالة، تذكر أن تذكر اسم الثيم الأصلي مع اسم صاحبه :)
 
-## Local Theme
+## ثيم محلي
 
-As you probably found out from the previous section, you can have a local theme for your project. By having a **relative path** in your theme field.
+كما قد تكون قد استنتجت من القسم السابق، يمكنك استخدام ثيم محلي لمشروعك، وذلك بتحديد مسار (relative path) في خانة `theme` في قسم التعريف
 
 ```yaml
 ---
@@ -54,4 +55,4 @@ theme: ./path/to/theme
 ---
 ```
 
-Refer to [how to write a theme](/themes/write-a-theme) for more details.
+يمكنك الرجوع إلى [كيف تنشئ ثيماً](/themes/write-a-theme) لمزيد من التفاصيل

@@ -65,7 +65,7 @@ const Theme = [
     link: '/themes/gallery',
   },
   {
-    text: 'اصنع ثيمك',
+    text: 'أنشئ ثيماً',
     link: '/themes/write-a-theme',
   },
 ]

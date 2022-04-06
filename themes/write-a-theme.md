@@ -1,34 +1,34 @@
-# Write a Theme
+# أنشئ ثيماً
 
-To get started, we recommend you use our generator for scaffolding your first theme
+لكي تبدأ، ننصحك باستخدام المولد الخاص بنا لإنشاء ثيمك الأول
 
 ```bash
 $ npm init slidev-theme
 ```
 
-Then you can modify and play with it. You can also refer to the [official themes](/themes/gallery) as examples.
+بعدها يمكنك تعديله كا تريد. يمكنك أيضا الرجوع إلى [الثيمات الرسمية](/themes/gallery) لأخذها كأمثلة.
 
-## Capability
+## الإمكانيات
 
-A theme can contribute to the following points:
+يمكن للثيم التحكم في النقاط التالية
 
-- Global styles
-- Provide default configurations (fonts, color schema, highlighters, etc.)
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
+- التنسيقات العامة (Global)
+- تعيين الإعدادات الإفتراضية (الخطوط، الألوان، التطليل، ...الخ)
+- توفير نسق خاص (layout) أو التعديل على تلك الموجودة مسبقاً.
+- توفير أجزاء (components) مخصصة أو التعديل على تلك الموجودة مسبقاً.
+- الزيادة على إعدادات Windi CSS
+- إعداد أدوات مثل Monaco و Prism
 
-## Conventions
+## القواعد المتفق عليها
 
-Themes are published to npm registry, and they should follow the conventions below:
+يتم نشر الثيمات على الـ `npm registry`، وعليها أن تتبع القواعد التالية
 
-- Package name should start with `slidev-theme-`, for example: `slidev-theme-awesome`
-- Add `slidev-theme` and `slidev` in the `keywords` field of your `package.json`
+- اسم الحزمة يجب أن يبدأ بـ `slidev-theme-`, على سبيل المثال: `slidev-theme-awesome`
+- قم بإضافة `slidev-theme` و `slidev` في خانة `keywords` في ملف `package.json` الخاص بك.
 
-## Setup
+## إعداد البيئة
 
-To set up the testing playground for your theme, you can create `example.md` with the following frontmatter, to tell Slidev you are using the current directory as a theme.
+لإعداد بيئة الإختبار للثيم الخاص بك، يمكنك إنشاء ملف `example.md` مغ قسم التعريف أدناه لتعريف Slidev أنك تريد استخدام المجلد الحالي كثيم.
 
 ```md
 ---
@@ -36,7 +36,7 @@ theme: ./
 ---
 ```
 
-Optionally, you can also add some scripts to your `packages.json`
+إختيارياً، يمكنك أيضاً إضافة بعض ال الأوامر لملف `package.json` الخاص بك.
 
 ```json
 // package.json
@@ -50,15 +50,15 @@ Optionally, you can also add some scripts to your `packages.json`
 }
 ```
 
-To publish your theme, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+لنشر الثيم الخاص بك، قم بتنفيذ الأمر `npm publish` ومبارك عليك. لا توجد عملية بناء (build) أي يمكنك نشر ملفات من نوع `.vue` و `.ts` مباشرة، و Slidev ذكي بما فيه الكفاية للتعامل معها.
 
-Theme contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/). 
+مشاركة الثيمات تخضع لنفس القواعد المتبعة في التخصيص محليا، ننصحك بالرجوع لـ [قواعد التسمية](/custom/). 
 
-## Default Configurations
+## الإعدادات الإفتراضية
 
-> Available since v0.19
+> متاح منذ الإصدار v0.19
 
-A theme can provide default [configurations](/custom/#frontmatter-configures) via `package.json`.
+يمكن للثيم توفير [إعدادات افتراضية](/custom/#frontmatter-configures) عبر ملف `package.json`.
 
 ```json
 // package.json
@@ -76,15 +76,15 @@ A theme can provide default [configurations](/custom/#frontmatter-configures) vi
 }
 ```
 
-Fonts will be auto imported from [Google Fonts](https://fonts.google.com/).
+سيتم استيراد الخطوط تلقائيا من [خطوط قوقل](https://fonts.google.com/).
 
-Learn more about [fonts](/custom/fonts) and [frontmatter configurations](/custom/#frontmatter-configures).
+لمعرفة المزيد عن [الخطوط](/custom/fonts) و [إعدادات قسم التعريف](/custom/#frontmatter-configures).
 
-## Theme Metadata
+## البيانات الوصفية للثيم
 
-### Color Schema
+### الألوان
 
-By default, Slidev assumes themes support both light mode and dark mode. If you only want your theme be presented in a designed color schema, you will need to specify it explicitly in `package.json`
+بشكل افتراضي, يفترض Slidev دعم الثيمات للوضع المظلم والعادي معاً. إن كنت تريد للثيم الخاص بك الظهور بنسق ألوان معين فعليك تعريف ذلك في ملف `package.json`
 
 ```json
 // package.json
@@ -100,7 +100,7 @@ By default, Slidev assumes themes support both light mode and dark mode. If you 
 }
 ```
 
-To access the dark mode when creating your theme styles, you can wrap the dark-mode-specific css inside a `dark` class:
+للوصول للوضع المظلم أثناء إنشائك لتنسيقات الثيم الخاص بك، يمكنك إحتواء التنسيقات المخصصة للوضع المظلم تحت class `dark`:
 
 ```css
 /* general css here */
@@ -114,15 +114,15 @@ html.dark {
 }
 ```
 
-Slidev toggles a `dark` class on the page's `html` element for switching color schema.
+يقوم Slidev بإلغاء وتفعيل class `dark` على وسم `html` لتغيير نسق الألوان.
 
-### Highlighter
+### تلوين الكود
 
-Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+ألون الأكواد أيضا يتم توفيرها عبر الثيم، وندعم كلاً من [Prism](https://prismjs.com/) و [Shiki](https://github.com/shikijs/shiki). للمزيد من المعلومات يرجى الرجوع لـ [التوثيق الخاص بتلوين الكود](/custom/highlighters).
 
-You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+يمكنك دعم أي منهما أو كليهما. يرجى الرجوع للثيم الافتراضي لرؤية أمثلة على الإعدادات [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
 
-Also, remember to specify the supported highlighters in your `package.json`
+تذكر أيضا أن تذكر التلوينات المدعومة في ملف `package.json` الخاص بك.
 
 ```json
 // package.json
@@ -133,9 +133,9 @@ Also, remember to specify the supported highlighters in your `package.json`
 }
 ```
 
-### Slidev Version
+### إصدار Slidev
 
-If the theme is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your theme working properly:
+إذا كان الثيم يعتمد على إحدى ميزات Slidev المضافة حديثاً فيمكنك تحديد أقل إضدار من Slidev يلزم لتشغيل الثيم الخاص بك بشكل صحيح:
 
 ```json
 // package.json
@@ -146,4 +146,4 @@ If the theme is relying on a specific feature of Slidev that are newly introduce
 }
 ```
 
-If users are using older versions of Slidev, an error will be thrown.
+إن كان لدى المستخدمين إصدار أقل من Slidev فسيتم إظهار خطأ بذلك.
