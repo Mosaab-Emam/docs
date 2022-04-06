@@ -2,70 +2,70 @@
 
 const Guide = [
   {
-    text: 'Why Slidev',
+    text: 'لماذا Slidev',
     link: '/guide/why',
   },
   {
-    text: 'Getting Started',
+    text: 'دليل البداية',
     link: '/guide/',
   },
   {
-    text: 'Installation',
+    text: 'التثبيت',
     link: '/guide/install',
   },
   {
-    text: 'Markdown Syntax',
+    text: 'بنية markdown',
     link: '/guide/syntax',
   },
   {
-    text: 'Navigation',
+    text: 'التنقل',
     link: '/guide/navigation',
   },
   {
-    text: 'Animations',
+    text: 'الأنيميشن',
     link: '/guide/animations',
   },
   {
-    text: 'Exporting',
+    text: 'الإستخراج',
     link: '/guide/exporting',
   },
   {
-    text: 'Static Hosting',
+    text: 'إستضافة ثابتة (Static)',
     link: '/guide/hosting',
   },
   {
-    text: 'Record Presentation',
+    text: 'تسجيل عرض',
     link: '/guide/recording',
   },
   {
-    text: 'Presenter Mode',
+    text: 'وضع المقدم',
     link: '/guide/presenter-mode',
   },
   {
-    text: 'Drawing & Annotations',
+    text: 'الرسم والشرح',
     link: '/guide/drawing',
   },
   {
-    text: 'Editor Integrations',
+    text: 'التكامل مع محررات النصوص',
     link: '/guide/editors',
   },
   {
-    text: 'FAQ',
+    text: 'الأسئلة الشائعة',
     link: '/guide/faq',
   },
 ]
 
 const Theme = [
   {
-    text: 'Use Theme',
+    text: 'استخدام ثيم',
     link: '/themes/use',
   },
   {
-    text: 'Theme Gallery',
+    text: 'مكتبة الثيمات',
     link: '/themes/gallery',
   },
   {
-    text: 'Write a Theme',
+    text: 'اصنع ثيمك',
     link: '/themes/write-a-theme',
   },
 ]
@@ -77,6 +77,10 @@ const Translations = [
   {
     text: '简体中文',
     link: 'https://cn.sli.dev{{pathname}}',
+  },
+  {
+    text: 'العربية',
+    link: 'https://ar.sli.dev{{pathname}}',
   },
   {
     text: 'Français',
@@ -114,47 +118,47 @@ const Translations = [
 
 const Customizations = [
   {
-    text: 'Customizations',
+    text: 'التخصيص',
     link: '/custom/',
   },
   {
-    text: 'Directory Structure',
+    text: 'بنية المشروع',
     link: '/custom/directory-structure',
   },
   {
-    text: 'Fonts',
+    text: 'الخطوط',
     link: '/custom/fonts',
   },
   {
-    text: 'Highlighters',
+    text: 'التطليل',
     link: '/custom/highlighters',
   },
   {
-    text: 'Configure Vue',
+    text: 'إعداد Vue',
     link: '/custom/config-vue',
   },
   {
-    text: 'Configure Vite',
+    text: 'إعداد Vite',
     link: '/custom/config-vite',
   },
   {
-    text: 'Configure Windi CSS',
+    text: 'إعداد Windi CSS',
     link: '/custom/config-windicss',
   },
   {
-    text: 'Configure Monaco',
+    text: 'إعداد Monaco',
     link: '/custom/config-monaco',
   },
   {
-    text: 'Configure KaTeX',
+    text: 'إعداد KaTeX',
     link: '/custom/config-katex',
   },
   {
-    text: 'Configure Mermaid',
+    text: 'إعداد Mermaid',
     link: '/custom/config-mermaid',
   },
   {
-    text: 'Configure Shortcuts',
+    text: 'إعداد الإختصارات',
     link: '/custom/config-shortcuts',
   },
   {
@@ -169,30 +173,30 @@ const Customizations = [
 
 const Resources = [
   {
-    text: 'Showcases',
+    text: 'المعرض',
     link: '/showcases',
   },
   {
-    text: 'Learning Resources',
+    text: 'مصادر التعلم',
     link: '/resources/learning',
   },
   {
-    text: 'Curated Covers',
+    text: 'خلفيات مختارة',
     link: '/resources/covers',
   },
 ]
 
 const slidebars = [
   {
-    text: 'Guide',
+    text: 'الدليل',
     children: Guide,
   },
   {
-    text: 'Themes',
+    text: 'الثيمات',
     children: Theme,
   },
   {
-    text: 'Customizations',
+    text: 'التخصيص',
     children: Customizations,
   },
   {
@@ -247,19 +251,19 @@ module.exports = {
 
     nav: [
       {
-        text: 'Guide',
+        text: 'الدليل',
         items: Guide,
       },
       {
-        text: 'Theme',
+        text: 'الثيم',
         items: Theme,
       },
       {
-        text: 'Customize',
+        text: 'تخصيص',
         items: Customizations,
       },
       {
-        text: 'Resources',
+        text: 'المصادر',
         items: Resources,
       },
       {
