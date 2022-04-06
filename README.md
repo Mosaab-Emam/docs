@@ -1,10 +1,11 @@
 # [sli.dev](https://sli.dev)
+<div style="direction: rtl;">
 
-Documentation for [Slidev](https://github.com/slidevjs/slidev)
+التوثيق لـ [Slidev](https://github.com/slidevjs/slidev)
 
 ## Translations
 
-| | Repo | Site | Maintainers |
+| | المستودع (Repo) | الموقع | المشرفون |
 |---|---|---:|---|
 | English | [docs](https://github.com/slidevjs/docs) | [sli.dev](https://sli.dev) | [@antfu](https://github.com/antfu) |
 | 简体中文 | [docs-cn](https://github.com/slidevjs/docs-cn) | [cn.sli.dev](https://cn.sli.dev) | [@QC-L](https://github.com/QC-L) [@Ivocin](https://github.com/Ivocin) |
@@ -17,7 +18,7 @@ Documentation for [Slidev](https://github.com/slidevjs/slidev)
 | Ελληνικά | [docs-el](https://github.com/slidevjs/docs-el) | [el.sli.dev](https://el.sli.dev) | [@GeopJr](https://github.com/GeopJr) |
 | 日本語 | [docs-ja](https://github.com/slidevjs/docs-el) | [ja.sli.dev](https://ja.sli.dev) | [@IkumaTadokoro](https://github.com/IkumaTadokoro) |
 
-## Start Server Locally
+## بدء التطوير محليا (على جهازك)
 
 ```
 npm i -g pnpm
@@ -26,10 +27,11 @@ pnpm i
 pnpm run dev
 ```
 
-And then visit `http://localhost:3000`
+ثم قم بالذهاب لـ `http://localhost:3000`
 
-Or install the [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) to edit side-by-side.
+أو قم بتحميل إضافة [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) للتعديل جنبا إلى جنب.
 
-## Help on Translating
+## ساعدنا في الترجمة
 
-See [TRANSLATIONS.md](/TRANSLATIONS.md)
+انظر [TRANSLATIONS.md](/TRANSLATIONS.md)
+</div>
